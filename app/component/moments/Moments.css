@@ -1,0 +1,98 @@
+.Moments-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 6rem;
+    height: auto;
+    width: 100%;
+    color: #8D7B68;
+    background-color: rgb(238, 238, 238);
+}
+
+.Moments-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    height: 120vh;
+}
+
+.corusel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 96%;
+    height: 80vh;
+    
+}
+
+.Btn-corusel-wrap{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 96%;
+    height: 10vh;
+    padding-inline: 10px;
+}
+
+.Btn-corusel{
+    background-color: rgb(74, 67, 67);
+    width: 5%;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.Image-moment-corusel{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: all .4s ease-in-out;
+}
+
+.image-active {
+    transition: all .4s ease-in-out;
+}
+
+.Moments-pick{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 96%;
+    height: 15vh;
+}
+
+.pick{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    background-color: white;
+    transition: all .2s ease-in-out;
+}
+
+.active{
+    height: 110%;
+    width: 23%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 768px) {
+    .Moments-container{
+        padding-top: 3rem;
+    }
+    .Btn-corusel-wrap{
+        height: 5vh;
+    }
+    .Btn-corusel{
+        width: 12%;
+    }
+    .corusel{
+        height: 50vh;
+    }
+}

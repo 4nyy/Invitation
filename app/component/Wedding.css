@@ -1,0 +1,113 @@
+
+.Wedding-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./image/bg-wedding\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    gap: 2rem;
+    height: auto;
+    width: 100%;
+    padding-bottom: 5rem ;
+    padding-top: 8rem;
+    padding-inline: 1rem;
+}
+
+.Wedding-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    height: 100vh;
+    gap: 1rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    text-align: center;
+}
+
+.Wedding-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 1.5rem;
+    height: 45%;
+    width: 80%;
+    color: #8D7B68;
+}
+
+.ringpg{
+    background-image: url(./image/ico_event_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+}
+
+.bird{
+    background-image: url(./image/ico_event_3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 114px;
+    height: 80px;
+}
+
+.scheadule{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: #8D7B68;
+}
+
+.line{
+    width: 80%;
+    height: 1px;
+    background-color: #8D7B68;
+}
+
+
+.Wedding-btm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 30%;
+    gap: .5rem;
+    font-size: 13px;
+    color: rgb(57, 57, 57);
+}
+
+.Wedding-title{
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+.wedding-desk{
+    font-size: 20px;
+}
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+   .Wedding-container{
+    gap: 2rem;
+    padding-bottom: 4rem ;
+    padding-top: 4rem;
+    padding-inline: 1.5rem;
+   }
+   .Wedding-card{
+    height: 60vh;
+   }
+   .scheadule{
+    font-size: 15px;
+   }
+   .Wedding-title{
+    font-size: 12px;
+   }
+   .wedding-desk{
+    font-size: 12px;
+   }
+}

@@ -1,0 +1,138 @@
+.bridge-container {
+    background-image: url(./image/bg-bridge2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    padding-top: 7rem;
+    color: #8D7B68;
+    gap: 3rem;
+}
+
+.Bridge-title {
+    font-size: 40px;
+    font-family: 'Parisienne', cursive;
+}
+
+.bridge-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 80%;
+    height: auto;
+}
+
+.bridge-wrapper-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 20rem;
+    height: auto;
+}
+
+.bridge-dan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 15rem;
+    font-size: 110px;
+    font-family: 'Parisienne', cursive;
+}
+
+
+.imgM {
+    background-image: url(./image/man.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+}
+
+.imgW {
+    background-image: url(./image/woman.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+}
+
+
+.bridge-namecomplete {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    height: 10%;
+    font-family: 'Roboto Slab', serif;
+    border-bottom: solid 1px #8D7B68;
+    font-size: 20px;
+}
+
+.bridge-desk {
+    width: 70%;
+    height: 10%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(57, 57, 57);
+}
+
+.bridge-call {
+    font-size: 40px;
+    font-family: 'Parisienne', cursive;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .bridge-container {
+        padding-top: 2rem;
+        gap: 1rem;
+    }
+
+    .Bridge-title {
+        font-size: 30px;
+    }
+
+    .bridge-image {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        margin-bottom: 3rem;
+    }
+
+    .bridge-dan {
+        height: 6rem;
+        font-size: 70px;
+    }
+    .bridge-wrapper-image{
+        font-size: 15px;
+    }
+
+    .imgM {
+        width: 11rem;
+        height: 11rem;
+    }
+    
+    .imgW{
+        width: 11rem;
+        height: 11rem;
+    }
+    .bridge-call{
+        display: none;
+    }
+    .bridge-namecomplete{
+        height: 3rem;
+    }
+}

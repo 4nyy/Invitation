@@ -16,7 +16,7 @@
     flex-direction: column;
     gap: 2rem;
     width: 100%;
-    height: 120vh;
+    height: auto;
 }
 
 .corusel{
@@ -62,7 +62,7 @@
     align-items: center;
     gap: 10px;
     width: 96%;
-    height: 15vh;
+    height: 20vh;
 }
 
 .pick{
@@ -85,6 +85,7 @@
 @media only screen and (max-width: 768px) {
     .Moments-container{
         padding-top: 3rem;
+        padding-bottom: 9rem;
     }
     .Btn-corusel-wrap{
         height: 5vh;
@@ -94,5 +95,8 @@
     }
     .corusel{
         height: 50vh;
+    }
+    .Moments-pick{
+        height: 15vh;
     }
 }

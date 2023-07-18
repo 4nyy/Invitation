@@ -91,7 +91,9 @@
     font-weight: bolder;
     font-family: 'Parisienne', cursive;
 }
-
+.z-index{
+    z-index: 0;
+}
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     .landing{

@@ -1,20 +1,21 @@
 'use client';
 import './page.css'
 import Bridge from './component/Bridge'
-import React,{useState , useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Wedding from './component/Wedding';
 import Live from './component/Live/Live';
 import Moments from './component/moments/Moments';
 import Day from './component/Day/Day';
 import Maps from './component/Maps/Maps';
 import Navbarm from './Navbarm/Navbarm';
+import Audioplayer from './component/Audio/Audioplayer';
 export default function Home() {
   const [opacity, setOpacity] = useState(0);
-  const[isNavbar, setNavbar] = useState(false);
+  const [isNavbar, setNavbar] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY *10;
+      const scrollPosition = window.scrollY * 10;
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
       const scrollPercentage = scrollPosition / maxScroll;
       const newOpacity = scrollPercentage.toFixed(2); // Menggunakan 2 desimal untuk opacity
@@ -52,48 +53,63 @@ export default function Home() {
       <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet" />
       {/* NAVBAR START */}
-      {isNavbar ? 
-      <Navbarm/>
-      : 
-      <nav className='nav-container'>
-        <div className='nav-link'>
-          <h1>Lorem & Ipsum by Tsch</h1>
-          <div className='nav-linkto'>
-            <a href="#bridge">Bride & Groom</a>
-            <a href="#wedding">Wedding</a>
-            <a href="#moment">Our Moments</a>
-            <a href="">RSVP</a>
+      {isNavbar ?
+        <Navbarm />
+        :
+        <nav className='nav-container'>
+          <div className='nav-link'>
+            <h1>Lorem & Ipsum by Tsch</h1>
+            <div className='nav-linkto'>
+              <a href="#bridge">Bride & Groom</a>
+              <a href="#wedding">Wedding</a>
+              <a href="#moment">Our Moments</a>
+              <a href="">RSVP</a>
+            </div>
           </div>
-        </div>
-        <div className='nav-scrol' style={{opacity}}>
-        </div>
-      </nav>}
-      
-      {/* NAVBAR END */}
+          <div className='nav-scrol' style={{ opacity }}>
+          </div>
+        </nav>}
 
+      {/* NAVBAR END */}
+      {/* audio */}
+        <Audioplayer />
       <div className="wrapper">
         <div className='landing'>
           <p className='title'>The Wedding Of</p>
           <p className='name-wed'>Lorem & Ipsum</p>
         </div>
 
+
+        {/* audio end */}
         {/* Bridge */}
-        <Bridge id='bridge'/>
+        <div className='z-index'>
+          <Bridge id='bridge' />
+        </div>
 
         {/* Wedding */}
-        <Wedding id='wedding'/>
+        <div className='z-index'>
+          <Wedding id='wedding' />
+        </div>
 
         {/* Maps */}
-        <Maps/>
+        <div className='z-index'>
+          <Maps />
+        </div>
 
         {/* Live */}
-        <Live id='live'/>
+        <div className='z-index'>
+          <Live id='live' />
+        </div>
 
         {/* Day */}
-        <Day/>
+        <div className='z-incex'>
+          <Day />
+        </div>
 
         {/* MOMENTS */}
-        <Moments id='moment'/>
+        <div className='z-index'>
+          <Moments id='moment' />
+        </div>
       </div>
     </main>
   )

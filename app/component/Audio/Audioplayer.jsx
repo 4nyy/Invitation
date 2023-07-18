@@ -38,7 +38,7 @@ const AudioPlayer = () => {
   }, []);
   return (
     <div>
-      <button className={isVisible?'Audio-toggle':'Audio-toggle hidden'} onClick={handleToggleAudio}>
+      <button className={isVisible ?'Audio-toggle':'Audio-toggle hidden'} onClick={handleToggleAudio}>
         {isPlaying ? 'Pause' : 'Play'}
       </button>
     </div>

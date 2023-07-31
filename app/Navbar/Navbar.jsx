@@ -2,7 +2,7 @@
 import ScrollLink from '../component/Linkscroll/ScrollLink';
 import React, { useState,useEffect } from 'react';
 import './Navbar.css'
-function Navbar(props,{isGiftSend}) {
+function Navbar(props) {
     const [opacity, setOpacity] = useState(0);
     useEffect(() => {
         const handleScroll = () => {
@@ -20,7 +20,7 @@ function Navbar(props,{isGiftSend}) {
         };
     }, []);
     return (
-        <nav className={isGiftSend?'nav-container':'nav-container index1'}>
+        <nav className={`nav-container ${props.togle}`}>
             <div className='nav-link'>
                 <h1>Lorem & Ipsum by Tsch</h1>
                 <div className='nav-linkto'>

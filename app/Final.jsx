@@ -41,9 +41,9 @@ export default function Home() {
       <div className="wrapper">
         {/* NAVBAR START */}
         {isNavbar ?
-          <Navbarm />
+          <Navbarm togle={isNavbar ? "":"hidden" }/>
           :
-          <Navbar />
+          <Navbar togle={isNavbar ? "hidden":"" }/>
         }
         {/* NAVBAR END */}
         {/* audio */}

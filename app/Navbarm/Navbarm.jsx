@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart,faRing,faImage,faCalendar} from '@fortawesome/free-solid-svg-icons';
 function Navbarm(props) {
     return (
-        <nav className='Navbar-m'>
+        <nav className={`Navbar-m ${props.togle}`}>
             <ScrollLink className='Navbar-click'href="#bridge">
                 <FontAwesomeIcon className='icon' icon={faHeart}/>
                 <p className='Navbarm-teks'>Bride & Groom</p>

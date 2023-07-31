@@ -1,6 +1,6 @@
 .Navbar-m{
     position: fixed;
-    z-index: 10;
+    z-index: 1;
     bottom: 0;
     display: flex;
     justify-content: space-evenly;

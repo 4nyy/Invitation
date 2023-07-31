@@ -1,0 +1,99 @@
+.Gift-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6rem;
+    height: auto;
+    width: 100%;
+    color: #8D7B68;
+    background-color: rgb(238, 238, 238);
+    z-index: 1;
+}
+
+.Gift-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    background-image: url('../image/bg-wedding\ \(2\).jpg');
+}
+
+.Gift-content{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 80%;
+    width: 96%;
+    border-radius: 10px;
+    background-color: rgb(238, 238, 238);
+}
+
+.Gift-1{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+.Gift-2{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+    width: 60%;
+}
+.Gift-desk{
+    color: rgb(57, 57, 57);
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.Gift-btn{
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    height: 3rem;
+    border: solid #8D7B68;
+    border-radius: 25px;
+}
+
+.gift-title {
+    font-size: 43px;
+    font-family: 'Parisienne', cursive;
+}
+
+@media only screen and (max-width: 768px) {
+    .Gift-container{
+        margin-bottom: 9rem;
+        padding-top: 3rem;
+    }
+    .Gift-bg{
+        height: 30vh;
+    }
+    .Gift-desk{
+        font-size: 10px;
+        letter-spacing: .2px;
+    }
+    .Gift-btn{
+        width: 5rem;
+        height: 1.5rem;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+    .Gift-2{
+        gap: 1rem;
+    }
+    .Gift-1{
+        padding-top: 4rem;
+    }
+    .gift-title{
+        font-size: 25px;
+    }
+}

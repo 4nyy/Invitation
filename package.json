@@ -21,6 +21,8 @@
     "tailwindcss": "3.3.2"
   },
   "devDependencies": {
-    "file-loader": "^6.2.0"
+    "@types/react": "18.2.17",
+    "file-loader": "^6.2.0",
+    "typescript": "5.1.6"
   }
 }

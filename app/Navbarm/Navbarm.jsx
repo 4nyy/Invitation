@@ -2,25 +2,33 @@ import React from 'react';
 import ScrollLink from '../component/Linkscroll/ScrollLink';
 import './Navbarm.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart,faRing,faImage,faCalendar} from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faRing, faImage, faCalendar } from '@fortawesome/free-solid-svg-icons';
 function Navbarm(props) {
     return (
-        <nav className={`Navbar-m ${props.togle}`}>
-            <ScrollLink className='Navbar-click'href="#bridge">
-                <FontAwesomeIcon className='icon' icon={faHeart}/>
-                <p className='Navbarm-teks'>Bride & Groom</p>
+        <nav className="Navbar-m"  style={props.togle}>
+            <ScrollLink to="bridge">
+                <div className='Navbar-click'>
+                    <FontAwesomeIcon className='icon' icon={faHeart} />
+                    <p className='Navbarm-teks'>Bride & Groom</p>
+                </div>
             </ScrollLink>
-            <ScrollLink className='Navbar-click' href="#wedding">
-                <FontAwesomeIcon className='icon' icon={faRing}/>
-                <p className='Navbarm-teks'>Wedding</p>
+            <ScrollLink to="wedding">
+                <div className='Navbar-click'>
+                    <FontAwesomeIcon className='icon' icon={faRing} />
+                    <p className='Navbarm-teks'>Wedding</p>
+                </div>
             </ScrollLink>
-            <ScrollLink className='Navbar-click' href="#moment">
-                <FontAwesomeIcon className='icon' icon={faImage}/>
-                <p className='Navbarm-teks'>Our Moments</p>
+            <ScrollLink to="moment">
+                <div className='Navbar-click' >
+                    <FontAwesomeIcon className='icon' icon={faImage} />
+                    <p className='Navbarm-teks'>Our Moments</p>
+                </div>
             </ScrollLink>
-            <ScrollLink className='Navbar-click' href="">
-                <FontAwesomeIcon className='icon' icon={faCalendar}/>
-                <p className='Navbarm-teks' >RSVP</p>
+            <ScrollLink to="">
+                <div className='Navbar-click'>
+                    <FontAwesomeIcon className='icon' icon={faCalendar} />
+                    <p className='Navbarm-teks' >RSVP</p>
+                </div>
             </ScrollLink>
         </nav>
     );

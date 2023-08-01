@@ -40,6 +40,7 @@
 
 .name-scheadule{
    color: #8D7B68;
+   font-size: 20px;
 }
 @media only screen and (max-width: 768px) {
     .Day-container{
@@ -50,5 +51,8 @@
     }
     .Day-wrap{
         width: 8rem;
+    }
+    .name-scheadule{
+        font-size: 10px;
     }
 }

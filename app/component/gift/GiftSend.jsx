@@ -1,9 +1,12 @@
 'use client'
+import barcode from '../image/qr-code.png'
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faX} from '@fortawesome/free-solid-svg-icons';
-import React from 'react';
+import React,{useState} from 'react';
 import './GiftSend.css';
 function GiftSend({ setGiftActive, setPosition }) {
+    const[barcodeActive,setBarcodeActive]=useState(false)
     return (
         <div className='Giftsend-container'>
             <div className='Giftsend-opacity'></div>
@@ -23,7 +26,33 @@ function GiftSend({ setGiftActive, setPosition }) {
                     </div>
                 </div>
                 <div className='Giftsend-bottom'>
-                    
+                    <div className='Bank-wrapper'>
+                        <button className={barcodeActive ? 'Bank-btn' : 'Bank-btn B-active'} onClick={() => setBarcodeActive(false)}>BANK ABC</button>
+                        <button className={barcodeActive ? 'Bank-btn B-active' : 'Bank-btn'}onClick={() => setBarcodeActive(true)}>BANK BCD</button>
+                    </div>
+                    <div className='Bank-barcode'>
+                        {barcodeActive ? 
+                        <div className='barcode-wrapper'>
+                            <Image  
+                                src={barcode}
+                                className='image-barcode'
+                            />
+                            <div>
+                                <p className='barcode-desk'>Lorem - 298198298918</p>
+                            </div>
+                        </div>
+                        : 
+                        <div className='barcode-wrapper'>
+                            <Image  
+                                className='image-barcode'
+                                src={barcode}
+                            />
+                            <div>
+                                <p className='barcode-desk'>Ipsum - 2384159759757</p>
+                            </div>
+                        </div>
+                        }
+                    </div>
                 </div>
             </div>
         </div>
